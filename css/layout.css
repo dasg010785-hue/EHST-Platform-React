@@ -10,16 +10,64 @@
 
     align-items:center;
 
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            rgba(4,23,48,.88),
+
+            rgba(8,43,94,.82)
+
+        ),
+
+        url("../assets/backgrounds/hero-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
 }
 .hero-container{
 
-    width:min(1280px,92%);
+    width:90%;
+
+    max-width:1400px;
 
     margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+
+        1fr
+        1fr;
+
+    gap:80px;
+
+    align-items:center;
 
 }
 .hero-content{
 
-    max-width:650px;
+   color:white;
+
+}
+.hero-tag{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    backdrop-filter:blur(12px);
+
+    margin-bottom:25px;
 
 }
