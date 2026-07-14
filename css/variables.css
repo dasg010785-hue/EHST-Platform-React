@@ -1,0 +1,81 @@
+:root{
+
+/* ===============================
+   PALETA PRINCIPAL
+================================ */
+
+--primary:#0B2D5C;
+--primary-light:#1E5AA8;
+--secondary:#14B8A6;
+--success:#16A34A;
+--warning:#F59E0B;
+--danger:#DC2626;
+
+/* ===============================
+   FONDOS
+================================ */
+
+--bg-dark:#081628;
+--bg-gradient-1:#122C5C;
+--bg-gradient-2:#4B1335;
+--bg-gradient-3:#7B1010;
+
+--surface:#FFFFFF;
+--surface-soft:#F7F9FC;
+
+/* ===============================
+   TEXTO
+================================ */
+
+--text:#1F2937;
+--text-soft:#6B7280;
+--text-light:#FFFFFF;
+
+/* ===============================
+   BORDES
+================================ */
+
+--border:#E5E7EB;
+
+/* ===============================
+   SOMBRAS
+================================ */
+
+--shadow-small:0 5px 15px rgba(0,0,0,.08);
+--shadow-medium:0 15px 40px rgba(0,0,0,.12);
+--shadow-large:0 25px 80px rgba(0,0,0,.18);
+
+/* ===============================
+   GLASS
+================================ */
+
+--glass:rgba(255,255,255,.08);
+--glass-border:rgba(255,255,255,.18);
+
+/* ===============================
+   ESPACIADO
+================================ */
+
+--space-xs:8px;
+--space-sm:16px;
+--space-md:24px;
+--space-lg:48px;
+--space-xl:80px;
+--space-2xl:120px;
+
+/* ===============================
+   BORDES REDONDEADOS
+================================ */
+
+--radius-sm:8px;
+--radius-md:16px;
+--radius-lg:24px;
+--radius-xl:36px;
+
+/* ===============================
+   TRANSICIONES
+================================ */
+
+--transition:.35s ease;
+
+}
