@@ -1,0 +1,23 @@
+.btn-dashboard{
+
+    background:#16A34A;
+
+    color:#FFFFFF;
+
+    text-decoration:none;
+
+    padding:12px 22px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-dashboard:hover{
+
+    transform:translateY(-2px);
+
+}
