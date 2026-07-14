@@ -1,0 +1,25 @@
+/* ===========================
+   HERO
+=========================== */
+
+#hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+}
+.hero-container{
+
+    width:min(1280px,92%);
+
+    margin:auto;
+
+}
+.hero-content{
+
+    max-width:650px;
+
+}
