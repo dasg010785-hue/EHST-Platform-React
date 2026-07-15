@@ -1,7 +1,9 @@
 function Indicators() {
   return (
-    <section className="py-16 px-6 bg-white">
-
+    <section
+      id="indicadores"
+      className="py-16 px-6 bg-white"
+    >
       <div className="max-w-6xl mx-auto">
 
         <h2 className="text-3xl font-bold text-center text-blue-900 mb-10">
@@ -39,7 +41,6 @@ function Indicators() {
 
           </div>
 
-
           {/* Cobertura */}
           <div className="rounded-2xl shadow-lg border p-8 bg-white">
 
@@ -72,7 +73,6 @@ function Indicators() {
         </div>
 
       </div>
-
     </section>
   );
 }
