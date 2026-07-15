@@ -18,21 +18,19 @@ export default function Navbar() {
     className="h-16 w-auto object-contain"
   />
 
-  <div>
+<div className="flex flex-col">
 
-    <h2 className="text-xl font-bold leading-tight text-slate-900">
-      Estrategia de Higiene y Seguridad
-      <br />
-      en el Trabajo
-    </h2>
+  <h2 className="text-2xl font-bold text-slate-900 leading-snug">
+    Estrategia de Higiene y Seguridad en el Trabajo
+  </h2>
 
-    <img
-      src={servidorServidor}
-      alt="La SST de Servidor a Servidor"
-      className="mt-2 h-9 w-auto object-contain"
-    />
+  <img
+    src={servidorServidor}
+    alt="La SST de Servidor a Servidor"
+    className="mt-2 h-8 w-fit object-contain"
+  />
 
-  </div>
+</div>
 
 </div>
 
