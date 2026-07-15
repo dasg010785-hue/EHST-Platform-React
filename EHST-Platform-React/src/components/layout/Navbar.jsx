@@ -10,11 +10,11 @@ export default function Navbar() {
 
       <div className="mx-auto max-w-7xl px-8">
 
-        {/* =========================
-            CABECERA
-        ========================= */}
+        {/* ===========================
+            CABECERA INSTITUCIONAL
+        ============================ */}
 
-        <div className="grid grid-cols-3 items-center py-5">
+        <div className="grid grid-cols-[1fr_2.5fr_1fr] items-center py-5">
 
           {/* Logo Rama Judicial */}
           <div className="flex justify-start">
@@ -27,14 +27,14 @@ export default function Navbar() {
 
           </div>
 
-
           {/* Título */}
           <div className="flex flex-col items-center">
 
             <h1
               className="
-                text-4xl
+                text-5xl
                 font-extrabold
+                leading-none
                 tracking-tight
                 text-slate-900
               "
@@ -44,15 +44,16 @@ export default function Navbar() {
 
             <h2
               className="
-                mt-1
-                text-3xl
+                mt-2
+                whitespace-nowrap
+                text-2xl
+                xl:text-3xl
                 font-black
-                text-center
                 tracking-tight
                 bg-gradient-to-r
-                from-red-700
-                via-red-500
-                to-blue-700
+                from-[#821212]
+                via-[#C53030]
+                to-[#1E3A8A]
                 bg-clip-text
                 text-transparent
               "
@@ -61,7 +62,6 @@ export default function Navbar() {
             </h2>
 
           </div>
-
 
           {/* Logo Servidor a Servidor */}
           <div className="flex justify-end">
@@ -76,11 +76,9 @@ export default function Navbar() {
 
         </div>
 
-
-
-        {/* =========================
+        {/* ===========================
             MENÚ
-        ========================= */}
+        ============================ */}
 
         <div className="flex items-center justify-between border-t border-slate-200 py-3">
 
@@ -106,7 +104,7 @@ export default function Navbar() {
 
           </nav>
 
-
+          {/* Estado */}
           <div
             className="
               flex
