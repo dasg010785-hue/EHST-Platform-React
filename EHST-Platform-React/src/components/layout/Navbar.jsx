@@ -6,22 +6,32 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur-xl shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-4">
 
-        {/* Logo */}
-        <div className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-r from-red-600 to-blue-700 text-white font-bold shadow-lg">
-            EH
-          </div>
+{/* Identidad Institucional */}
+<div className="flex items-center gap-4">
 
-          <div>
-            <h2 className="text-lg font-bold text-slate-900">
-              {platform.app.name}
-            </h2>
+  <img
+    src={logoRama}
+    alt="Rama Judicial"
+    className="h-16 w-auto object-contain"
+  />
 
-            <p className="text-xs text-slate-500">
-              Rama Judicial de Colombia
-            </p>
-          </div>
-        </div>
+  <div>
+
+    <h2 className="text-xl font-bold leading-tight text-slate-900">
+      Estrategia de Higiene y Seguridad
+      <br />
+      en el Trabajo
+    </h2>
+
+    <img
+      src={servidorServidor}
+      alt="La SST de Servidor a Servidor"
+      className="mt-2 h-9 w-auto object-contain"
+    />
+
+  </div>
+
+</div>
 
         {/* Menú */}
         <nav className="hidden gap-8 lg:flex">
