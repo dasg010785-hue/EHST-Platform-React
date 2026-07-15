@@ -9,67 +9,125 @@ export default function Navbar() {
 
   return (
 
-    <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/90 backdrop-blur-xl shadow-sm">
+    <header
+      className="
+        sticky
+        top-0
+        z-50
+        border-b
+        border-slate-200/70
+        bg-white/90
+        backdrop-blur-xl
+        shadow-sm
+      "
+    >
 
 
       <div className="mx-auto max-w-7xl px-8">
 
 
-        {/* ===========================
-            BLOQUE INSTITUCIONAL
-        ============================ */}
+        {/* ==============================
+            CABECERA INSTITUCIONAL
+        =============================== */}
 
-        <div className="flex flex-col items-center justify-center py-4">
+        <div
+          className="
+            grid
+            grid-cols-3
+            items-center
+            py-4
+          "
+        >
 
 
-          {/* Título principal */}
 
-          <h1
+          {/* LOGO RAMA JUDICIAL */}
+
+          <div
             className="
-              text-center
-              text-2xl
-              font-extrabold
-              tracking-tight
-              text-slate-900
+              flex
+              justify-start
             "
           >
-            Estrategia de Higiene y Seguridad
-            <br />
-            <span className="text-blue-700">
-              en el Trabajo
-            </span>
-
-          </h1>
-
-
-
-          {/* Logos institucionales */}
-
-          <div className="mt-3 flex items-center justify-center gap-8">
-
 
             <img
               src={logoRama}
               alt="Rama Judicial"
               className="
-                h-16
+                h-20
                 w-auto
                 object-contain
               "
             />
 
+          </div>
 
+
+
+
+
+          {/* TITULO CENTRAL */}
+
+          <div
+            className="
+              flex
+              flex-col
+              items-center
+              justify-center
+            "
+          >
+
+            <h1
+              className="
+                text-center
+                text-3xl
+                font-extrabold
+                leading-tight
+                tracking-tight
+                text-slate-900
+              "
+            >
+
+              Estrategia de Higiene y Seguridad
+
+              <br />
+
+              <span
+                className="
+                  text-blue-700
+                "
+              >
+                en el Trabajo
+              </span>
+
+
+            </h1>
+
+
+          </div>
+
+
+
+
+
+          {/* LOGO SERVIDOR A SERVIDOR */}
+
+          <div
+            className="
+              flex
+              justify-end
+            "
+          >
 
             <img
               src={servidorServidor}
               alt="La SST de Servidor a Servidor"
               className="
-                h-12
+                h-14
                 w-auto
                 object-contain
               "
             />
-
 
           </div>
 
@@ -80,9 +138,9 @@ export default function Navbar() {
 
 
 
-        {/* ===========================
-            BARRA DE NAVEGACIÓN
-        ============================ */}
+        {/* ==============================
+             MENU INFERIOR
+        =============================== */}
 
 
         <div
@@ -97,8 +155,6 @@ export default function Navbar() {
         >
 
 
-
-          {/* Menú */}
 
           <nav
             className="
@@ -121,12 +177,12 @@ export default function Navbar() {
                   hover:text-blue-700
                 "
               >
+
                 {item.label}
+
               </a>
 
-
             ))}
-
 
           </nav>
 
@@ -134,11 +190,10 @@ export default function Navbar() {
 
 
 
-          {/* Estado */}
+          {/* ESTADO DASHBOARD */}
 
           <div
             className="
-              ml-auto
               flex
               items-center
               gap-2
@@ -150,7 +205,6 @@ export default function Navbar() {
               py-2
             "
           >
-
 
             <Activity
               size={16}
@@ -175,12 +229,10 @@ export default function Navbar() {
         </div>
 
 
-
       </div>
 
 
     </header>
 
   );
-
 }
