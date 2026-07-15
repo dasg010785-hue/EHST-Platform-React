@@ -1,15 +1,210 @@
 @import "tailwindcss";
 
+/* ================================
+   ESTILOS GLOBALES
+================================ */
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: Inter, system-ui, sans-serif;
-  background: #f8fafc;
+  min-width: 320px;
+  overflow-x: hidden;
+
+  font-family:
+    Inter,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  color: #1e293b;
+
+  /* Fondo premium */
+  background:
+
+    /* Luz azul superior */
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(37, 99, 235, 0.10),
+      transparent 35%
+    ),
+
+    /* Luz roja inferior */
+    radial-gradient(
+      circle at 85% 90%,
+      rgba(185, 28, 28, 0.10),
+      transparent 35%
+    ),
+
+    /* Luz central */
+    radial-gradient(
+      circle at center,
+      rgba(255,255,255,.95),
+      transparent 60%
+    ),
+
+    /* Degradado principal */
+    linear-gradient(
+      180deg,
+      #f3f8ff 0%,
+      #ffffff 45%,
+      #fff4f4 100%
+    );
+
+  background-attachment: fixed;
 }
 
-* {
-  box-sizing: border-box;
+#root{
+  min-height:100vh;
+}
+
+
+/* ================================
+   GRID TECNOLÓGICO
+================================ */
+
+body::before{
+
+  content:"";
+
+  position:fixed;
+
+  inset:0;
+
+  pointer-events:none;
+
+  opacity:.22;
+
+  background-image:
+
+    linear-gradient(
+      rgba(30,58,138,.05) 1px,
+      transparent 1px
+    ),
+
+    linear-gradient(
+      90deg,
+      rgba(30,58,138,.05) 1px,
+      transparent 1px
+    );
+
+  background-size:48px 48px;
+
+  z-index:-2;
+
+}
+
+
+/* ================================
+   ILUMINACIÓN GENERAL
+================================ */
+
+body::after{
+
+  content:"";
+
+  position:fixed;
+
+  inset:0;
+
+  pointer-events:none;
+
+  background:
+
+      radial-gradient(
+        circle at top left,
+        rgba(59,130,246,.10),
+        transparent 35%
+      ),
+
+      radial-gradient(
+        circle at bottom right,
+        rgba(239,68,68,.10),
+        transparent 35%
+      );
+
+  z-index:-1;
+
+}
+
+
+/* ================================
+   TIPOGRAFÍA
+================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+
+  color:#0f172a;
+
+  letter-spacing:-0.03em;
+
+}
+
+p{
+
+  color:#475569;
+
+  line-height:1.7;
+
+}
+
+
+/* ================================
+   SCROLLBAR
+================================ */
+
+::-webkit-scrollbar{
+
+  width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+  background:#edf2f7;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+  border-radius:20px;
+
+  background:linear-gradient(
+      180deg,
+      #2563eb,
+      #b91c1c
+  );
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+  background:linear-gradient(
+      180deg,
+      #1d4ed8,
+      #991b1b
+  );
+
+}
+
+
+/* ================================
+   SELECCIÓN DE TEXTO
+================================ */
+
+::selection{
+
+  background:#2563eb;
+
+  color:white;
+
 }
