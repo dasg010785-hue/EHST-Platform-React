@@ -1,6 +1,9 @@
 import { platform } from "../../data/platform";
 import { Activity } from "lucide-react";
 
+import logoRama from "../../assets/logos/logo-rama.png";
+import servidorServidor from "../../assets/logos/servidor-servidor.png";
+
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/80 backdrop-blur-xl shadow-sm">
