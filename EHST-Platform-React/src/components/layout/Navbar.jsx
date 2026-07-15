@@ -6,7 +6,7 @@ import servidorServidor from "../../assets/logos/servidor-servidor.png";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/90 backdrop-blur-xl shadow-sm">
+    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-xl shadow-sm">
 
       <div className="mx-auto max-w-7xl px-8">
 
@@ -14,7 +14,7 @@ export default function Navbar() {
             CABECERA INSTITUCIONAL
         ============================ */}
 
-        <div className="grid grid-cols-[1fr_2.5fr_1fr] items-center py-5">
+        <div className="grid grid-cols-[1fr_2.6fr_1fr] items-center py-7">
 
           {/* Logo Rama Judicial */}
           <div className="flex justify-start">
@@ -22,21 +22,23 @@ export default function Navbar() {
             <img
               src={logoRama}
               alt="Rama Judicial"
-              className="h-20 w-auto object-contain"
+              className="max-h-20 w-auto object-contain"
             />
 
           </div>
 
+
           {/* Título */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center justify-center">
 
             <h1
               className="
                 text-5xl
-                font-extrabold
-                leading-none
+                font-black
                 tracking-tight
+                leading-tight
                 text-slate-900
+                pb-2
               "
             >
               Estrategia
@@ -44,11 +46,11 @@ export default function Navbar() {
 
             <h2
               className="
-                mt-2
                 whitespace-nowrap
                 text-2xl
                 xl:text-3xl
-                font-black
+                font-extrabold
+                leading-tight
                 tracking-tight
                 bg-gradient-to-r
                 from-[#821212]
@@ -56,6 +58,7 @@ export default function Navbar() {
                 to-[#1E3A8A]
                 bg-clip-text
                 text-transparent
+                pb-1
               "
             >
               Higiene y Seguridad en el Trabajo
@@ -63,18 +66,21 @@ export default function Navbar() {
 
           </div>
 
+
           {/* Logo Servidor a Servidor */}
           <div className="flex justify-end">
 
             <img
               src={servidorServidor}
               alt="La SST de Servidor a Servidor"
-              className="h-14 w-auto object-contain"
+              className="max-h-14 w-auto object-contain"
             />
 
           </div>
 
         </div>
+
+
 
         {/* ===========================
             MENÚ
@@ -82,7 +88,7 @@ export default function Navbar() {
 
         <div className="flex items-center justify-between border-t border-slate-200 py-3">
 
-          <nav className="hidden gap-8 lg:flex">
+          <nav className="hidden lg:flex gap-8">
 
             {platform.navigation.map((item) => (
 
@@ -93,7 +99,8 @@ export default function Navbar() {
                   text-sm
                   font-semibold
                   text-slate-600
-                  transition
+                  transition-colors
+                  duration-200
                   hover:text-blue-700
                 "
               >
@@ -104,7 +111,10 @@ export default function Navbar() {
 
           </nav>
 
-          {/* Estado */}
+
+
+          {/* Estado Dashboard */}
+
           <div
             className="
               flex
