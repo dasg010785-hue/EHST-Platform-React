@@ -18,9 +18,11 @@ function Home() {
 
         <Strategy />
 
-        <ActionLines />
-
+        {/* Primero */}
         <StrategicAxes />
+
+        {/* Después */}
+        <ActionLines />
 
         <Indicators />
 
